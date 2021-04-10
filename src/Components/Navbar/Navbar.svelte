@@ -40,10 +40,12 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 2px 2px 4px #0004;
   }
 
   .navbar {
     padding: 0 20px !important;
+    height: 60px;
   }
 
   .navbar-nav li {
