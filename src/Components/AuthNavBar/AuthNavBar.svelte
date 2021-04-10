@@ -1,15 +1,17 @@
 <script>
-  import {  Link } from "svelte-navigator";
+  import {  Link,useLocation } from "svelte-navigator";
+   const location = useLocation();
   export let navlists = [];
   export let header;
   console.log(navlists);
+  $:console.log(location.pathname)
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <section id="nav-bar">
   <nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
-    <a class="navbar-brand company_brand " href="/">
+    <a class="navbar-brand company_brand" href="/">
       {header}
     </a>
     <button
@@ -24,16 +26,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        {#each navlists as list}
-          <li class="nav-item">
-            <Link to={`/${list.url}`}>
-              <a class="nav-link light-color" href={list.url}>{list.label}</a>
-            </Link> 
-          </li>
-        {/each}
+         <li class="nav-item">
+          <Link class="nav-link light-color" to="/"><a>Home</a></Link>
+        </li>
         <li class="nav-item">
           <Link class="nav-link light-color" to="login"><a>Login</a></Link>
-            
         </li>
         <li class="nav-item">
           <Link class="nav-link light-color" to="register"><a>Register</a></Link>
@@ -55,8 +52,6 @@
 
   .navbar {
     padding: 0 20px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
   }
 
   .navbar-nav li {

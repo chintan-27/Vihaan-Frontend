@@ -14,8 +14,14 @@
   .main-bgcolor {
 	background-image: var(--gradient);
   }
+  .light-bgcolor {
+  background-color: var(--light) !important;
+  }
   .light-color {
 	color: var(--light) !important;
+  }
+  .dark-color {
+  color: var(--dark) !important;
   }
   .grey-bgcolor {
 	background: var(--grey);

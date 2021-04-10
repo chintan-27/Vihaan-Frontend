@@ -6,8 +6,6 @@ const NAVBAR_DATA = [
   { id: 3, url: "#about-us", label: "About us" },
   { id: 4, url: "#testimonials", label: "Testimonials" },
   { id: 5, url: "#footer", label: "Contacts" },
-  { id: 6, url: "#login", label: "Login"},
-  { id: 7, url: "#register", label: "Register"}
 
 ];
 const BANNER_DATA = {
@@ -32,7 +30,7 @@ const SERVICE_DATA = {
       LABEL: "MANAGE YOUR LIBRARY",
       DESCRIPTION:
         "It is tough but well worth the effort to create clever material that is not promotional in nature, but rather educates and inspires. It lets them see you as a reliable source of information by delivering content that is meaningful to your audience.",
-      URL: "images/service2.png"
+      URL: "images/library.svg"
     },
     {
       LABEL: "EVENTS & ANNOUNCEMENTS",
