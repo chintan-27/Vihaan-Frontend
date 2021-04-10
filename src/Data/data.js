@@ -23,19 +23,20 @@ const SERVICE_DATA = {
     {
       LABEL: "MANAGE YOUR CANTEEN",
       DESCRIPTION:
-        "To customise the content, technical functionality and scope of your website so that your pages show for a specific set of keyword at the top of a search engine list. In the end, the goal is to attract traffic to your website when they are searching for goods, services or business-related information.",
+        "To customize the way of serving food in your university or college canteen so that your students can order food in advance so that they need not have to wait for their delicious food",
       URL: "images/food.svg"
     },
     {
       LABEL: "MANAGE YOUR LIBRARY",
       DESCRIPTION:
-        "It is tough but well worth the effort to create clever material that is not promotional in nature, but rather educates and inspires. It lets them see you as a reliable source of information by delivering content that is meaningful to your audience.",
-      URL: "images/library.svg"
+
+        "It is tough to manage your college library manually so EDUCARE makes your work much easier by digitizing it and handling it efficiently and with zero tolerance.",
+      URL: "images/service2.png"
     },
     {
       LABEL: "EVENTS & ANNOUNCEMENTS",
       DESCRIPTION:
-        "Many People rely on social networks to discover, research, and educate themselves about a brand before engaging with that organization. The more your audience wants to engage with your content, the more likely it is that they will want to share it.",
+        "EDUCARE gives you the service to make your students aware of various events and announcements by posting it online thus minimizing other resources.",
       URL: "images/events.svg"
     }
   ]
@@ -46,14 +47,14 @@ const ABOUT_DATA = {
   TITLE: "Why we're different",
   IMAGE_URL: "images/network.png",
   WHY_CHOOSE_US_LIST: [
-    "We provides Cost-Effective Digital Marketing than Others.",
+    "We provide cost-Effective digitization of education than others in the market.",
     "High customer statisfaction and experience.",
-    "Marketing efficiency and quick time to value.",
-    "Clear & transparent fee structure.",
-    "We provides Marketing automation which is an integral platform that ties all of your digital marketing together.",
+    "High Efficiency and quick time to value.",
+    "Zero Tolerance.",
+    "We provide automation of education services which is an integral platform that ties all of your digital services together.",
     "A strong desire to establish long lasting business partnerships.",
-    "Provide digital marketing to mobile consumer.",
-    "We provides wide range to services in reasonable prices"
+    "Provide digital services to universities.",
+    "We provides wide range to services to colleges in reasonable prices"
   ]
 };
 const TESTIMONIAL_DATA = {
@@ -61,17 +62,17 @@ const TESTIMONIAL_DATA = {
   TESTIMONIAL_LIST: [
     {
       DESCRIPTION:
-        "Nixalar has made a huge difference to our business with his good work and knowledge of SEO and business to business marketing techniques. Our search engine rankings are better than ever and we are getting more people contacting us thanks to Jomer’s knowledge and hard work.",
+        "EDUCARE has made a huge difference to our Academy by providing different services. Our Academy has shown better results and we are getting more students contacting us for admission in the Academy.",
       IMAGE_URL: "images/user1.jpg",
       NAME: "Julia hawkins",
-      DESIGNATION: "Co-founder at ABC"
+      DESIGNATION: "XYZ College"
     },
     {
       DESCRIPTION:
-        "Nixalar and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
+        "Thanks to EDUCARE for providing digitized services which helped our Academy a lot such as managing events,announcements,books,etc.I would recommend you to check it out once.",
       IMAGE_URL: "images/user2.jpg",
       NAME: "John Smith",
-      DESIGNATION: "Co-founder at xyz"
+      DESIGNATION: "ABC College"
     }
   ]
 };
@@ -90,12 +91,12 @@ const SOCIAL_DATA = {
 
 const FOOTER_DATA = {
   DESCRIPTION:
-    "We are typically focused on result-based maketing in the digital world. Also, we evaluate your brand’s needs and develop a powerful strategy that maximizes profits.",
+    "We are typically focused on making college services digitize. Also, we evaluate your  needs and develop a powerful strategy that increases your institue reputation.",
   CONTACT_DETAILS: {
     HEADING: "Contact us",
-    ADDRESS: "La trobe street docklands, Melbourne",
-    MOBILE: "+1 61234567890",
-    EMAIL: "nixalar@gmail.com"
+    ADDRESS: "CARTER ROAD,MUMBAI",
+    MOBILE: "+1 123456789",
+    EMAIL: "educare@gmail.com"
   },
   SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",
   SUBSCRIBE: "Subscribe"

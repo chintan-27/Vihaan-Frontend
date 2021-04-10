@@ -4,12 +4,12 @@
 <script >
     import {Link} from "svelte-navigator"
     import axios from "axios"
-    let email = "";
-    let password ="";
-    let confirmPassword="";
-    function handleSubmit(){
-        axios.post(" http://192.168.0.28:8000/register",{email,password})
-        console.log(email,password,confirmPassword)
+    let email = "Jay51419@gmail.com";
+    let password ="password";
+    let confirmPassword="password";
+    async function handleSubmit(){
+        const res = await axios.post("http://192.168.43.35:8000/register",{email,password})
+        $:console.log(res)
     }
 </script>
  <form on:submit|preventDefault={handleSubmit}  >
@@ -18,19 +18,20 @@
                 <h2 class="font-bold text-2xl py-4">Register</h2>
 
                 <div class="flex flex-col w-full px-14 mb-4" >
-                    <label class="text-sm text-color5" >Email</label>
+                    <p class="text-sm text-color5" >Email</p>
                     <input bind:value={email} class="dark-color border-2 border-color1 shadow-md py-2 my-2 rounded-lg" type="email" >
                 </div>
 
+               <div class="flex flex-col w-full px-14 mb-4" >
+                    <p class="text-sm text-color5" >Password</p>
+                    <input type="password" bind:value={password} 
+                    class="dark-color border-2  shadow-md py-2 my-2 rounded-lg" >
+                </div>
                 <div class="flex flex-col w-full px-14 mb-4" >
-                    <label class="text-sm text-color5" >Password</label>
-                    <input bind:value={password} class="dark-color border-2 border-color1 shadow-md py-2 my-2 rounded-lg"  type="password" >
+                    <p class="text-sm text-color5" >Confirm Password</p>
+                    <input bind:value={confirmPassword} class="dark-color border-2 border-color1 shadow-md py-2 my-2 rounded-lg" type="password" >
                 </div>
-
-                <div  class="flex flex-col w-full px-14 mb-4" >
-                    <label class="text-sm text-color5" >Confirm Password</label>
-                    <input bind:value={confirmPassword} type="password" class="dark-color border-2 border-color1 shadow-md py-2 my-2 rounded-lg" >
-                </div>
+               
                 <div class="flex flex-col items-center w-full px-14 mb-4" >
                     <input class="main-bgcolor border-2 w-1/2 border-color1 font-bold mb-4 shadow-md py-2 bg-color4 text-color0 transition duration-600 transform hover:scale-110 light-color" type="submit"  value="Submit">
                     <p>Already have an account? <span class=" cursor-pointer"><Link to="login" >Login</Link> </span></p>
